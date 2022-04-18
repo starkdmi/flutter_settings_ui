@@ -30,7 +30,7 @@ class SettingsGroup extends StatelessWidget {
           // The title
           (settingsGroupTitle != null)
               ? Padding(
-                  padding: const EdgeInsets.only(bottom: 5),
+                  padding: const EdgeInsets.only(left: 10, bottom: 5),
                   child: Text(
                     settingsGroupTitle!,
                     style: (settingsGroupTitleStyle == null)
@@ -52,6 +52,8 @@ class SettingsGroup extends StatelessWidget {
               },
               itemCount: items.length,
               itemBuilder: (BuildContext context, int index) {
+                if (index == 0) return Padding(padding: EdgeInsets.only(top: 10), child: items[index]);
+                if (index == items.length - 1) return Padding(padding: EdgeInsets.only(bottom: 5), child: items[index]);
                 return items[index];
               },
               shrinkWrap: true,
