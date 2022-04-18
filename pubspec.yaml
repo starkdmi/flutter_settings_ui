@@ -31,6 +31,16 @@ flutter:
         pluginClass: BabstrapSettingsScreenPlugin
       ios:
         pluginClass: BabstrapSettingsScreenPlugin
+      macos:
+        pluginClass: BabstrapSettingsScreenPlugin
+      web:
+        pluginClass: BabstrapSettingsScreenPlugin
+        # fileName: hello_web.dart
+      windows:
+        pluginClass: BabstrapSettingsScreenPlugin
+      linux:
+        pluginClass: BabstrapSettingsScreenPlugin
+
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
