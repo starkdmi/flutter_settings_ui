@@ -30,7 +30,7 @@ class SettingsGroup extends StatelessWidget {
           // The title
           (settingsGroupTitle != null)
               ? Padding(
-                  padding: const EdgeInsets.only(left: 10, bottom: 5),
+                  padding: const EdgeInsets.only(left: 10, bottom: 8),
                   child: Text(
                     settingsGroupTitle!,
                     style: (settingsGroupTitleStyle == null)
