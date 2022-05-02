@@ -8,14 +8,16 @@ class SettingsGroup extends StatelessWidget {
   String? settingsGroupTitle;
   TextStyle? settingsGroupTitleStyle;
   List<SettingsItem> items;
-  // Icons size
   double? iconItemSize;
+  Color backgroundColor;
 
-  SettingsGroup(
-      {this.settingsGroupTitle,
-      this.settingsGroupTitleStyle,
-      required this.items,
-      this.iconItemSize = 25});
+  SettingsGroup({
+    this.settingsGroupTitle,
+    this.settingsGroupTitleStyle,
+    required this.items,
+    this.iconItemSize = 25,
+    this.backgroundColor = Colors.white
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +44,7 @@ class SettingsGroup extends StatelessWidget {
           // The SettingsGroup sections
           Container(
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: backgroundColor,
               borderRadius: BorderRadius.circular(15),
             ),
             child: ListView.separated(
