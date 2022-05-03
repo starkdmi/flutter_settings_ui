@@ -46,7 +46,7 @@ class SettingsItem extends StatelessWidget {
       title: Text(
         title,
         style: titleStyle ?? TextStyle(fontWeight: FontWeight.bold),
-        maxLines: 1,
+        maxLines: subtitle == "" ? 2 : 1,
       ),
       subtitle: subtitle == "" ? null : Text(
         subtitle!,
